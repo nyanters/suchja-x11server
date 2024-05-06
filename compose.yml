@@ -1,0 +1,10 @@
+services:
+  suchja-wine:
+    build: .
+    container_name: 'suchja-wine'
+    restart: always
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./opt:/root/opt
+    working_dir: '/root'
